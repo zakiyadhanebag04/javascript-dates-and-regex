@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+
+<body>
+
+    <h2>A Javascript example</h2>
+
+    <p id="demo"></p>
+
+    <button type="button" onclick="myFunc()">Click me!</button>
+
+    <script>
+
+        function myFunc() {
+
+            // Creating Dates = Date()
+            const currentDate = new Date();
+
+            // Specific date and time
+            const specificDate = new Date('2024-04-15T12:00:00');
+
+            // Using milliseconds since the Unix Epoch
+            const usingMs = new Date(1619743440000);
+
+            // Access Date Component
+            const date = new Date();
+
+            const year = date.getFullYear();
+            const month = date.getMonth();
+            const day = date.getDay();
+            const hours = date.getHours();
+            const minutes = date.getMinutes();
+            const seconds = date.getSeconds();
+
+            // Format
+            const formattedDate = date.toLocaleDateString('en-US'); // 4/29/2024
+
+            // manipulate dates
+            date.setDate(date.getDate() + 7);
+
+            // Compare date
+            const date1 = new Date('2024-04-29');
+            const date2 = new Date('2024-05-05');
+
+            if (date1 < date2) {
+                console.log("date 1 is earlier than date 2");
+            }
+        }
+
+    </script>
+
+</body>
+</html>

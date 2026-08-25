@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+    <h2>A Javascript example</h2>
+
+    <p id="demo"></p>
+
+    <button type="button" onclick="myFunc()">Click me!</button>
+
+    <script>
+
+        function myFunc() {
+
+            // Regex
+
+            // 1. Literal Characters => '/hello'
+
+            // 2. Character classes -> '[aeiou]'
+
+            // 3. Quantifiers ->>
+
+            // '+' => matches one or more occurences
+
+            // '*' => matches zero or more occurences
+
+            // '?' => matches zero or one occurence
+
+            // 4. Anchors =>
+
+            // '^' => matches begining of the string
+
+            // '$' -> matches the end
+
+            // 5. Modifiers
+
+            // 'i' => matches the case-insensitive
+
+            // 'g' => performs global match
+
+            let pattern = /^[a-zA-Z0-9. %+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+            let string = "myemail@ultimez.com";
+
+            console.log(pattern.test(string)); // true
+
+        }
+
+    </script>
+
+</body>
+</html>
